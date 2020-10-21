@@ -14,7 +14,7 @@ export default function App() {
 
   return (
     <div id="main">
-      <button onClick={showNotes} id="click">
+      <button onClick={() => showNotes()} id="click">
         showPara
       </button>
     </div>
