@@ -1,8 +1,10 @@
 import React, { Component, useState } from "react";
 import "./../styles/App.css";
 
+var cnt = 0;
 export default function App() {
   function showNotes() {
+    if (cnt == 1) return;
     let p = document.createElement("p");
     p.id = "para";
     p.innerText =
@@ -10,6 +12,7 @@ export default function App() {
 
     let dv = document.getElementById("main");
     dv.appendChild(p);
+    cnt++;
   }
 
   return (
