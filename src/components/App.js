@@ -5,7 +5,7 @@ export default function App() {
   function showNotes() {
     let p = document.createElement("p");
     p.id = "para";
-    p.innerHTML =
+    p.innerText =
       "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
 
     let dv = document.getElementById("main");
